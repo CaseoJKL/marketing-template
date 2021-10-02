@@ -1,5 +1,6 @@
 import styles from "../../styles/Sponsors.module.css";
 import Link from "next/link";
+import Head from "next/head";
 
 export const getStaticProps = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -12,16 +13,21 @@ export const getStaticProps = async () => {
 
 const Sponsors = ({ sponsors }) => {
   return (
-    <div>
-      <h1>Sponsors list</h1>
-      {sponsors.map((sponsor) => (
-        <Link href={"/sponsors/" + sponsor.id} key={sponsor.id}>
-          <a className={styles.single}>
-            <h3>{sponsor.name}</h3>
-          </a>
-        </Link>
-      ))}
-    </div>
+    <>
+      <Head>
+        <title>Brand | Sponsors</title>
+      </Head>
+      <div>
+        <h1>Sponsors list</h1>
+        {sponsors.map((sponsor) => (
+          <Link href={"/sponsors/" + sponsor.id} key={sponsor.id}>
+            <a className={styles.single}>
+              <h3>{sponsor.name}</h3>
+            </a>
+          </Link>
+        ))}
+      </div>
+    </>
   );
 };
 

@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 
-body {
+/* body {
   background: #f2f2f2;
   color: #333;
   font-family: "Nunito";
-}
-a {
+  margin: 0;
+} */
+/* a {
   color: #333;
   text-decoration: none;
 }
@@ -17,15 +18,32 @@ nav {
   margin: 10px auto 80px;
   padding: 10px 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #ddd;
 }
 nav a {
-  margin-left: 12px;
+  margin: 0 3.5em;
 }
-nav .logo {
-  margin-right: auto;
+
+
+
+
+
+
+
+
+ */
+
+.button-hero {
+  height: 3.5em;
+  width: 10em;
+  font-size: 1em;
+  border-radius: 0.25em;
+  background-color: #333;
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 1px #444;
 }
 footer {
   display: block;
@@ -35,11 +53,146 @@ footer {
   color: #777;
   border-top: 1px solid #eaeaea;
 }
-
 .not-found {
   text-align: center;
 }
 .not-found a {
   color: #4979ff;
   text-decoration: underline;
+}
+
+/* ---------------- */
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+  color: #333;
+  font-family: "Nunito";
+}
+
+a {
+  color: #000;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.header ul a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.header ul a:hover {
+  background-color: #ddd;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  transition: all 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon::after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  transition: all 0.2s ease-out;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+/* Rotation */
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
 }

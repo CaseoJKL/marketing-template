@@ -1,39 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 
-/* body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
   background: #f2f2f2;
   color: #333;
   font-family: "Nunito";
-  margin: 0;
-} */
-/* a {
-  color: #333;
-  text-decoration: none;
+  padding-top: 63px;
 }
-.content {
-  max-width: 960px;
-  margin: 0 auto;
-}
-nav {
-  margin: 10px auto 80px;
-  padding: 10px 0;
+
+.body {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #ddd;
+  /* padding-top: 63px; */
 }
-nav a {
-  margin: 0 3.5em;
-}
-
-
-
-
-
-
-
-
- */
 
 .button-hero {
   height: 3.5em;
@@ -63,20 +49,13 @@ footer {
 
 /* ---------------- */
 
-body {
-  margin: 0;
-  background: #f2f2f2;
-  color: #333;
-  font-family: "Nunito";
-  padding-top: 80px;
-}
-
 a {
   color: #000;
 }
 
 .header {
   background-color: #fff;
+  /* background-image: url("/orange.jpg"); */
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -89,7 +68,7 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .header ul a {
@@ -99,7 +78,7 @@ a {
 }
 
 .header ul a:hover {
-  background-color: #ddd;
+  background-color: #63d6a2;
 }
 
 .header .logo {
@@ -179,6 +158,10 @@ a {
 }
 
 @media (min-width: 48em) {
+  body {
+    padding-top: 0;
+  }
+
   .header li {
     float: left;
   }

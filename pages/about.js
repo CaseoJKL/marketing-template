@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import styles from "../styles/About.module.css";
 
 const About = () => {
   return (
@@ -7,8 +8,8 @@ const About = () => {
       <Head>
         <title>Brand | About</title>
       </Head>
-      <div>
-        <h1>About</h1>
+      <div className={styles.content}>
+        <h1 className={styles.header}>About</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
           fugiat provident dolore dolores minima delectus? Facere, reiciendis
@@ -20,6 +21,13 @@ const About = () => {
           aperiam aspernatur fugit molestias accusamus dolor quae natus est nam
           mollitia, maxime recusandae voluptas modi voluptates officia, vitae,
           omnis similique. Perspiciatis!
+        </p>
+        <h1 className={styles.header}>TinySquad</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque non
+          distinctio voluptates excepturi culpa libero dolores rerum hic, fugit
+          aliquid atque dignissimos repellendus repudiandae placeat ipsum iure,
+          minus dolorum.
         </p>
         <small>
           <Link href="/sponsors">

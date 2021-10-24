@@ -1,0 +1,29 @@
+.content {
+  padding-top: 0;
+  text-align: center;
+}
+
+.p {
+  margin: 1rem;
+}
+
+.btn {
+  background-color: #63cbd6;
+  border: none;
+  border-radius: 100px;
+  width: 600px;
+  height: 60px;
+  transition: 0.2s linear;
+  margin: 3rem;
+}
+
+.btn:hover {
+  background-color: #6fe1ed;
+  cursor: pointer;
+}
+
+@media (min-width: 48em) {
+  .content {
+    padding-top: 0;
+  }
+}

@@ -1,34 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   // This is the Navbar, a component of the layout
 
   return (
-    // <nav>
-    //   <div className="logo">
-    //     <h1>Brand</h1>
-    //     {/* <Image alt="" src="/example" />  You can put the brand logo here*/}
-    //   </div>
-    //   <div className="nav-bar">
-    //     <Link href="/">
-    //       <a>Home</a>
-    //     </Link>
-    //     <Link href="/contact">
-    //       <a>Contact</a>
-    //     </Link>
-    //     <Link href="/about">
-    //       <a>About</a>
-    //     </Link>
-    //   </div>
-
-    //   <button className="button-hero">
-    //     <span>Press Me!</span>
-    //   </button>
-    // </nav>
-    <header className="header">
+    <header className={"header " + styles["header"]}>
       <a href="#" className="logo">
-        Rosstown
+        Cafe
       </a>
       <input type="checkbox" className="menu-btn" id="menu-btn" />
       <label className="menu-icon" htmlFor="menu-btn">

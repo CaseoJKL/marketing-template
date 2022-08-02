@@ -6,7 +6,7 @@ const handler = async (req, res) => {
 
   const msg = {
     to: "info@example.com",
-    from: "andrejsaule8@gmail.com",
+    from: "example@gmail.com",
     subject: "Brand Website Form",
     html: `
             Name: ${nameContents} <br>

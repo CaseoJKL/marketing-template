@@ -7,8 +7,8 @@ const Navbar = () => {
 
   return (
     <header className={"header " + styles["header"]}>
-      <a href="#" className="logo">
-        Cafe
+      <a href="#" className={"logo " + styles["logo"]}>
+        Los Pollos Hermanos
       </a>
       <input type="checkbox" className="menu-btn" id="menu-btn" />
       <label className="menu-icon" htmlFor="menu-btn">

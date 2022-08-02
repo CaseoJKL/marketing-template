@@ -48,6 +48,12 @@ export default function Home() {
           <Figure src={"/kebab-lg.jpg"} alt="Kebab" caption="Turkish Kebab" />
 
           <Figure src={"/kebab-lg.jpg"} alt="Kebab" caption="Turkish Kebab" />
+
+          <Figure src={"/taco-lg.jpg"} alt="Taco" caption="Tacos" />
+
+          <Figure src={"/taco-lg.jpg"} alt="Taco" caption="Tacos" />
+
+          <Figure src={"/sushi-lg.jpg"} alt="Sushi" caption="Sushi" />
         </div>
       </div>
     </>

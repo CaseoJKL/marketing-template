@@ -1,3 +1,5 @@
+import styles from "../../styles/Sponsors.module.css";
+
 export const getStaticPaths = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await res.json();
@@ -27,7 +29,7 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ sponsor }) => {
   return (
-    <div>
+    <div className={"sponsor-wrapper " + styles["sponsor-wrapper"]}>
       <h1>{sponsor.name}</h1>
       <p>{sponsor.email}</p>
       <p>{sponsor.website}</p>

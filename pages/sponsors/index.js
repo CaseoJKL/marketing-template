@@ -17,7 +17,7 @@ const Sponsors = ({ sponsors }) => {
       <Head>
         <title>Brand | Sponsors</title>
       </Head>
-      <div>
+      <div className={"sponsors-container " + styles["sponsors-container"]}>
         <h1>Sponsors list</h1>
         {sponsors.map((sponsor) => (
           <Link href={"/sponsors/" + sponsor.id} key={sponsor.id}>

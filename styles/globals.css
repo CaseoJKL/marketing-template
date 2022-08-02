@@ -78,7 +78,8 @@ a {
 }
 
 .header ul a:hover {
-  background-color: #63d6a2;
+  background-color: orangered;
+  border-radius: 10px;
 }
 
 .header .logo {

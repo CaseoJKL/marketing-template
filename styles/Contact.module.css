@@ -1,5 +1,8 @@
 .content {
   padding-top: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -14,7 +17,7 @@
   width: 600px;
   height: 60px;
   transition: 0.2s linear;
-  margin: 3rem;
+  margin-top: 30vh;
 }
 
 .btn:hover {
@@ -22,8 +25,13 @@
   cursor: pointer;
 }
 
+/* .image-wrapper {
+  opacity: 5%;
+} */
+
 @media (min-width: 48em) {
   .content {
     padding-top: 0;
   }
 }
+

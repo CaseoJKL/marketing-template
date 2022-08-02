@@ -20,6 +20,7 @@ const Figure = (props) => {
         height={300}
         alt={props.alt}
         src={props.src}
+        priority
       ></Image>
       <figcaption className={styles.figCaption}>{props.caption}</figcaption>
     </figure>

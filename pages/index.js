@@ -23,6 +23,8 @@ export default function Home() {
             alt="A restaurant"
             width={1600}
             height={900}
+            layout="responsive"
+            priority
           ></Image>
         </div>
 

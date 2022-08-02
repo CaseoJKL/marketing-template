@@ -1,0 +1,26 @@
+.card {
+    border: orange 2px solid;
+    box-shadow: tomato 10px 5px 10px;
+    background-color: orange;
+    z-index: 1000;
+    text-align: center;
+
+    margin-top: 80vh;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    padding-top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.header, .header2, .article {
+    margin: 1rem;
+}
+
+.article {
+    font-size: 1.2rem;
+}
